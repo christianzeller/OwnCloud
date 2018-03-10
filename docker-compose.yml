@@ -5,10 +5,13 @@ services:
    ports:
      - "80:80"
      - "443:443"
+    depends_on:
+     - db
+     - data
    links:
      - db:mysql
    volumes_from:
-     - data 
+     - data      
    environment:
      OWNCLOUD_SERVERNAME: dockerpi
  db:
