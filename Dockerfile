@@ -1,4 +1,4 @@
-FROM comzone/rpi-owncloud
+FROM owncloud
 
-RUN cat /start.sh > /start
-RUN chmod +x /start
+#RUN cat /start.sh > /start
+#RUN chmod +x /start
